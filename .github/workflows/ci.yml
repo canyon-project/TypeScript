@@ -48,3 +48,10 @@ jobs:
         with:
           name: coverage
           path: coverage
+      - name: Upload E2E coverage to Canyon
+        env:
+          CANYON_DSN: https://app.canyonjs.io/coverage/client
+        run: |
+          mkdir -p .canyon_output
+          cp coverage/coverage-final.json .canyon_output/coverage-final.json
+          canyon upload --dsn=$CANYON_DSN --repo_id=${{ github.repository_id }} --instrument_cwd=${{ github.workspace }} --sha=${{ github.sha }} --branch=${{ github.ref_name }} --provider=github --debug=true
