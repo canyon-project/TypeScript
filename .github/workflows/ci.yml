@@ -48,6 +48,10 @@ jobs:
         with:
           name: coverage
           path: coverage
+
+      - name: Install Canyon CLI
+        run: npm i -g @canyonjs/cli
+          
       - name: Upload E2E coverage to Canyon
         env:
           CANYON_DSN: https://app.canyonjs.io/coverage/client
