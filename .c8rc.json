@@ -1,7 +1,8 @@
 {
-    "reporter": ["lcovonly", "cobertura", "v8", "v8-json", "codecov"],
+    "reporter": ["lcovonly", "cobertura", "v8", "v8-json", "codecov", "json"],
     "src": "src",
     "include": ["src/**", "built/local/**"],
     "exclude": ["**/node_modules/**"],
     "mergeAsync": true
 }
+
