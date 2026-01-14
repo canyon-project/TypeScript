@@ -32,8 +32,8 @@ export function length(array: readonly any[] | undefined): number {
  */
 export function forEach<T, U>(array: readonly T[] | undefined, callback: (element: T, index: number) => U | undefined): U | undefined {
     if (array !== undefined) {
-        for (let i = 0; i < array.length; i++) {
-            const result = callback(array[i], i);
+        for (let i123 = 0; i123 < array.length; i123++) {
+            const result = callback(array[i123], i123);
             if (result) {
                 return result;
             }
