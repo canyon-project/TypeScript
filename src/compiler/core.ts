@@ -32,8 +32,8 @@ export function length(array: readonly any[] | undefined): number {
  */
 export function forEach<T, U>(array: readonly T[] | undefined, callback: (element: T, index: number) => U | undefined): U | undefined {
     if (array !== undefined) {
-        for (let i123456 = 0; i123456 < array.length; i123456++) {
-            const result = callback(array[i123456], i123456);
+        for (let i12345 = 0; i12345 < array.length; i12345++) {
+            const result = callback(array[i12345], i12345);
             if (result) {
                 return result;
             }
@@ -2591,4 +2591,5 @@ export function isNodeLikeSystem(): boolean {
         && !(process as any).browser
         && typeof require !== "undefined";
 }
+
 
