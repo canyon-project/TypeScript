@@ -39,6 +39,7 @@
         "!**/.gitattributes"
     ],
     "devDependencies": {
+        "@canyonjs/report":"latest",
         "@dprint/formatter": "^0.4.1",
         "@dprint/typescript": "0.93.4",
         "@esfx/canceltoken": "^1.0.0",
